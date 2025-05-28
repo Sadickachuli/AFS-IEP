@@ -9,11 +9,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
-    "vercel-build": "npx vite build",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
