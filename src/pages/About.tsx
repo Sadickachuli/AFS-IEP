@@ -13,25 +13,25 @@ const teamMembers: TeamMember[] = [
   {
     name: 'John Doe',
     role: 'Executive Director',
-    image: '/team/director.jpg',
+    image: '/images/team/director.jpg',
     bio: 'With over 15 years of experience in international education, John leads our mission to create meaningful cultural exchanges.'
   },
   {
-    name: 'Sarah Smith',
+    name: 'Sarah Doe',
     role: 'Program Coordinator',
-    image: '/team/coordinator.jpg',
+    image: '/images/team/coordinator.jpg',
     bio: 'Sarah ensures smooth operation of our exchange programs and maintains strong relationships with host families and schools.'
   },
   {
     name: 'Jane Doe',
     role: 'Cultural Affairs Director',
-    image: '/team/cultural.jpg',
+    image: '/images/team/cultural.jpg',
     bio: 'Jane brings authentic Ghanaian cultural experiences to our programs and develops cultural training materials.'
   },
   {
     name: 'Mary Doe',
     role: 'Student Support Specialist',
-    image: '/team/support.jpg',
+    image: '/images/team/support.jpg',
     bio: 'Mary provides comprehensive support to exchange students and helps them navigate their experience in Ghana.'
   }
 ];
@@ -65,13 +65,13 @@ const About = () => {
         {/* History Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="w-full md:w-1/2"
+                className="order-2 lg:order-1"
               >
                 <h2 className="text-3xl font-bold mb-6">Our History</h2>
                 <div className="space-y-4 text-gray-600">
@@ -90,18 +90,44 @@ const About = () => {
                     commitment to personal attention and cultural authenticity.
                   </p>
                 </div>
+                <div className="grid grid-cols-2 gap-4 mt-8">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    <img
+                      src="/images/about/history-1.jpg"
+                      alt="Early days of IEP Ghana"
+                      className="rounded-lg shadow-lg w-full h-48 object-cover"
+                    />
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    <img
+                      src="/images/about/history-2.jpg"
+                      alt="IEP Ghana Today"
+                      className="rounded-lg shadow-lg w-full h-48 object-cover"
+                    />
+                  </motion.div>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="w-full md:w-1/2"
+                className="order-1 lg:order-2"
               >
                 <img
-                  src="/about-history.jpg"
-                  alt="IEP Ghana History"
-                  className="rounded-lg shadow-lg w-full"
+                  src="/images/about/history-main.jpg"
+                  alt="IEP Ghana Through the Years"
+                  className="rounded-lg shadow-lg w-full aspect-[4/3] object-cover"
                 />
               </motion.div>
             </div>

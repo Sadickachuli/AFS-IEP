@@ -61,11 +61,11 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <Link to="/">
-              <span className="sr-only">Ghana IEP</span>
+              <span className="sr-only">IEP Ghana</span>
               <img
                 className="h-16 w-auto"
-                src="/logo-white.png"
-                alt="Ghana IEP Logo"
+                src="/images/logo.png"
+                alt="IEP Ghana Logo"
               />
             </Link>
             <p className="text-sm leading-6 text-gray-300">

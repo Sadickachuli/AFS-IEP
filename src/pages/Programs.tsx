@@ -20,7 +20,7 @@ const programs: Program[] = [
     description: 'Experience a transformative academic year in Ghana or send your child abroad for a cultural immersion experience.',
     duration: '1 Academic Year',
     ageRange: '15-18 years',
-    image: '/high-school.jpg',
+    image: '/images/programs/high-school.jpg',
     features: [
       'Full academic year in a Ghanaian high school',
       'Host family accommodation',
@@ -35,7 +35,7 @@ const programs: Program[] = [
     description: 'Make a meaningful impact while experiencing Ghanaian culture through our various volunteer programs.',
     duration: '2-12 weeks',
     ageRange: '18+ years',
-    image: '/volunteer.jpg',
+    image: '/images/programs/volunteer.jpg',
     features: [
       'Community development projects',
       'Teaching opportunities',
@@ -50,7 +50,7 @@ const programs: Program[] = [
     description: 'Immerse yourself in Ghanaian languages and cultural practices through our intensive programs.',
     duration: '4-8 weeks',
     ageRange: '16+ years',
-    image: '/language.jpg',
+    image: '/images/programs/language.jpg',
     features: [
       'Local language instruction',
       'Cultural workshops',

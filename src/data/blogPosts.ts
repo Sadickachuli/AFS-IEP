@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
 - Enhanced career opportunities`,
     author: 'John Doe',
     date: '2024-05-15',
-    image: '/blog/cultural-exchange.jpg',
+    image: '/images/blog/cultural-exchange.jpg',
     tags: ['Cultural Exchange', 'Education', 'Personal Growth']
   },
   {
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
 - Broader understanding`,
     author: 'Sarah Smith',
     date: '2024-05-10',
-    image: '/blog/host-family.jpg',
+    image: '/images/blog/host-family.jpg',
     tags: ['Host Family', 'Cultural Exchange', 'Community']
   },
   {
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
 - Cultural activities`,
     author: 'Kwame Mensah',
     date: '2024-05-05',
-    image: '/blog/education.jpg',
+    image: '/images/blog/education.jpg',
     tags: ['Education', 'Ghana', 'International Students']
   }
 ];

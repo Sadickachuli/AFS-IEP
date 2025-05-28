@@ -19,11 +19,11 @@ export default function Header() {
       <nav className="container flex items-center justify-between py-4">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Ghana IEP</span>
+            <span className="sr-only">IEP Ghana</span>
             <img
-              className="h-12 w-auto"
-              src="/logo.png"
-              alt="Ghana IEP Logo"
+              className="h-14 w-auto"
+              src="/images/logo.png"
+              alt="IEP Ghana Logo"
             />
           </Link>
         </div>
@@ -61,11 +61,11 @@ export default function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">Ghana IEP</span>
+                <span className="sr-only">IEP Ghana</span>
                 <img
-                  className="h-8 w-auto"
-                  src="/logo.png"
-                  alt="Ghana IEP Logo"
+                  className="h-10 w-auto"
+                  src="/images/logo.png"
+                  alt="IEP Ghana Logo"
                 />
               </Link>
               <button

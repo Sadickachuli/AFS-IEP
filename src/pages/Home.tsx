@@ -12,15 +12,26 @@ const Home = () => {
       />
       <div>
         {/* Hero Section */}
-        <section className="relative h-[90vh] bg-gray-900">
+        <section className="relative h-[90vh] bg-gray-900 overflow-hidden">
           <div className="absolute inset-0">
+            {/* Mobile Image */}
             <img
-              src="/hero-bg.jpg"
+              src="/images/hero/hero-bg.jpg"
               alt="Students in Ghana"
-              className="w-full h-full object-cover opacity-50"
+              className="w-full h-full object-cover opacity-50 md:hidden"
             />
+            {/* Desktop Video */}
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="hidden md:block w-full h-full object-cover opacity-50"
+            >
+              <source src="/images/hero/hero-bg.mp4" type="video/mp4" />
+            </video>
           </div>
-          <div className="relative container mx-auto px-4 h-full flex items-center">
+          <div className="relative container mx-auto px-4 h-full flex items-center z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,7 +67,7 @@ const Home = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <img
-                  src="/high-school.jpg"
+                  src="/images/programs/high-school.jpg"
                   alt="High School Exchange"
                   className="w-full h-48 object-cover"
                 />
@@ -77,7 +88,7 @@ const Home = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <img
-                  src="/volunteer.jpg"
+                  src="/images/programs/volunteer.jpg"
                   alt="Volunteer Programs"
                   className="w-full h-48 object-cover"
                 />
@@ -98,7 +109,7 @@ const Home = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <img
-                  src="/language.jpg"
+                  src="/images/programs/language.jpg"
                   alt="Language & Culture"
                   className="w-full h-48 object-cover"
                 />
