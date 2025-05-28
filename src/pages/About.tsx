@@ -23,16 +23,16 @@ const teamMembers: TeamMember[] = [
     bio: 'Sarah ensures smooth operation of our exchange programs and maintains strong relationships with host families and schools.'
   },
   {
-    name: 'Kwame Mensah',
+    name: 'Jane Doe',
     role: 'Cultural Affairs Director',
     image: '/team/cultural.jpg',
-    bio: 'Kwame brings authentic Ghanaian cultural experiences to our programs and develops cultural training materials.'
+    bio: 'Jane brings authentic Ghanaian cultural experiences to our programs and develops cultural training materials.'
   },
   {
-    name: 'Emma Wilson',
+    name: 'Mary Doe',
     role: 'Student Support Specialist',
     image: '/team/support.jpg',
-    bio: 'Emma provides comprehensive support to exchange students and helps them navigate their experience in Ghana.'
+    bio: 'Mary provides comprehensive support to exchange students and helps them navigate their experience in Ghana.'
   }
 ];
 
