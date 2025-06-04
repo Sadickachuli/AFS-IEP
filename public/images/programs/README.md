@@ -1,18 +1,16 @@
 # Program Images
 
-Place the following images in this directory:
+Upload the following images in this directory:
 
-1. `high-school.jpg` - High School Exchange Program
-   - Suggested content: Students in a classroom or school environment
-   - Recommended size: 1600x900px
+1. `high-school.jpg` - Study Abroad in Higher Education
+2. `language.jpg` - Community Education & Development Initiatives
+3. `volunteer.jpg` - Volunteer Programs (if needed on homepage)
 
-2. `volunteer.jpg` - Volunteer Programs
-   - Suggested content: Volunteers working in community projects
-   - Recommended size: 1600x900px
+**Recommended size:** 1600x900px, JPG format.
 
-3. `language.jpg` - Language Programs
-   - Suggested content: Language learning or cultural exchange activities
-   - Recommended size: 1600x900px
+- Images should be high quality, well-lit, and relevant to the program.
+- Filenames must match exactly as above for the images to appear on the site.
+- No placeholder images; only upload actual photos to be displayed.
 
 Image Guidelines:
 - Format: JPG/JPEG

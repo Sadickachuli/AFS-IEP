@@ -2,218 +2,114 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/shared/SEO';
 
-interface TeamMember {
-  name: string;
-  role: string;
-  image: string;
-  bio: string;
-}
-
-const teamMembers: TeamMember[] = [
-  {
-    name: 'John Doe',
-    role: 'Executive Director',
-    image: '/images/team/director.jpg',
-    bio: 'With over 15 years of experience in international education, John leads our mission to create meaningful cultural exchanges.'
-  },
-  {
-    name: 'Sarah Doe',
-    role: 'Program Coordinator',
-    image: '/images/team/coordinator.jpg',
-    bio: 'Sarah ensures smooth operation of our exchange programs and maintains strong relationships with host families and schools.'
-  },
-  {
-    name: 'Jane Doe',
-    role: 'Cultural Affairs Director',
-    image: '/images/team/cultural.jpg',
-    bio: 'Jane brings authentic Ghanaian cultural experiences to our programs and develops cultural training materials.'
-  },
-  {
-    name: 'Mary Doe',
-    role: 'Student Support Specialist',
-    image: '/images/team/support.jpg',
-    bio: 'Mary provides comprehensive support to exchange students and helps them navigate their experience in Ghana.'
-  }
+const staffMembers = [
+  { name: 'Diana Sey', role: 'Chief Executive Officer' },
+  { name: 'Teye-Mensah Mezo', role: 'Accounts and Finance Director' },
+  { name: 'Christiana Ahu', role: 'Program Manager' },
+  { name: 'Rosemond Nkansah', role: 'Program Manager' },
+  { name: 'Osborn Mensah', role: 'Program Coordinator' },
+  { name: 'Deborah Agamasu', role: 'Program Coordinator' },
+  { name: 'Theresa Ammah', role: 'Administration Coordinator' },
 ];
 
-const About = () => {
+const boardMembers = [
+  { name: 'Andani Kholinar', role: 'Board Chairman' },
+  { name: 'Peter Mireku', role: 'Vice Chairman' },
+  { name: 'Ewurama Asare', role: 'Board Secretary' },
+  { name: 'Martin Sasu', role: 'Board Treasurer' },
+  { name: 'Yahaya Abdul-Sallam', role: 'Member' },
+  { name: 'Pearl Kwakye', role: 'Member' },
+  { name: 'Adams Issaka', role: 'Member' },
+];
+
+export default function About() {
   return (
     <>
       <SEO
         title="About Us"
-        description="Learn about IEP Ghana's mission, history, values, and the dedicated team behind our successful cultural exchange programs."
+        description="IEP Ghana: Shaping Global Citizens Through Education. Learn about our mission, history, team, and board."
       />
       <div className="py-12">
-        {/* Mission Section */}
+        {/* Hero Section */}
         <section className="bg-primary text-white py-20">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Mission</h1>
-              <p className="text-xl">
-                To foster global understanding and cultural appreciation through meaningful
-                exchange programs that create lasting connections between Ghana and the world.
-              </p>
-            </motion.div>
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">IEP Ghana Company Profile</h1>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Shaping Global Citizens Through Education</h2>
+          </div>
+        </section>
+
+        {/* Overview Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-3xl font-bold mb-6">About Us</h2>
+            <h3 className="text-xl font-semibold mb-4">Overview</h3>
+            <p className="mb-4">
+              Intercultural Exchange Programs (IEP) Ghana exists to promote the advancement of intercultural learning and global understanding. We design and deliver programs that bring together young people, families, and communities from diverse cultural backgrounds to engage in shared learning experiences. Through these interactions, participants gain deeper appreciation for each other's cultures and develop a strong sense of global citizenship.
+            </p>
+            <p className="mb-4">
+              Our mission is to help individuals, especially youth become more aware of our shared humanity and more committed to addressing global challenges. By providing educational exchanges, work and training opportunities for students, teachers, and young professionals, we contribute to the advancement of education both in Ghana and abroad.
+            </p>
           </div>
         </section>
 
         {/* History Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-3xl font-bold mb-6">Our History</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="order-2 lg:order-1"
-              >
-                <h2 className="text-3xl font-bold mb-6">Our History</h2>
-                <div className="space-y-4 text-gray-600">
-                  <p>
-                    Founded in 2000, IEP Ghana began with a vision to bridge cultures
-                    through educational exchange. What started as a small initiative has
-                    grown into one of Ghana's leading cultural exchange organizations.
-                  </p>
-                  <p>
-                    Over the past two decades, we've facilitated thousands of successful
-                    exchanges, building lasting relationships between Ghana and
-                    communities worldwide.
-                  </p>
-                  <p>
-                    Today, we continue to expand our programs while maintaining our
-                    commitment to personal attention and cultural authenticity.
-                  </p>
-                </div>
+              <div>
+                <p className="mb-4">
+                  IEP Ghana was born from a rich legacy of international exchange and community-based education in Ghana. Originally operating within the AFS Ghana framework, IEP Ghana has since grown into an independent organisation with a clear focus on higher education mobility and local development through school-based initiatives. Today, we stand as a trusted partner in international education and grassroots empowerment.
+                </p>
                 <div className="grid grid-cols-2 gap-4 mt-8">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true }}
-                  >
-                    <img
-                      src="/images/about/history-1.jpg"
-                      alt="Early days of IEP Ghana"
-                      className="rounded-lg shadow-lg w-full h-48 object-cover"
-                    />
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    viewport={{ once: true }}
-                  >
-                    <img
-                      src="/images/about/history-2.jpg"
-                      alt="IEP Ghana Today"
-                      className="rounded-lg shadow-lg w-full h-48 object-cover"
-                    />
-                  </motion.div>
+                  <img src="/images/about/history-1.jpg" alt="Early days of IEP Ghana" className="rounded-lg shadow-lg w-full h-48 object-cover" />
+                  <img src="/images/about/history-2.jpg" alt="IEP Ghana Today" className="rounded-lg shadow-lg w-full h-48 object-cover" />
                 </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="order-1 lg:order-2"
-              >
-                <img
-                  src="/images/about/history-main.jpg"
-                  alt="IEP Ghana Through the Years"
-                  className="rounded-lg shadow-lg w-full aspect-[4/3] object-cover"
-                />
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Values Section */}
-        <section className="bg-gray-100 py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-white p-8 rounded-lg shadow-lg"
-              >
-                <h3 className="text-xl font-bold mb-4 text-primary">Cultural Understanding</h3>
-                <p className="text-gray-600">
-                  We believe in the power of cultural exchange to break down barriers
-                  and foster global understanding.
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white p-8 rounded-lg shadow-lg"
-              >
-                <h3 className="text-xl font-bold mb-4 text-primary">Educational Excellence</h3>
-                <p className="text-gray-600">
-                  We maintain high standards in our programs to ensure meaningful
-                  learning experiences for all participants.
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white p-8 rounded-lg shadow-lg"
-              >
-                <h3 className="text-xl font-bold mb-4 text-primary">Community Impact</h3>
-                <p className="text-gray-600">
-                  We strive to create positive change in both local and global
-                  communities through our exchange programs.
-                </p>
-              </motion.div>
+              </div>
+              <div>
+                <img src="/images/about/history-main.jpg" alt="IEP Ghana Through the Years" className="rounded-lg shadow-lg w-full aspect-[4/3] object-cover" />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Team Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-3xl font-bold text-center mb-12">Our Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamMembers.map((member, index) => (
-                <motion.div
-                  key={member.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden"
-                >
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                    <p className="text-primary font-medium mb-4">{member.role}</p>
-                    <p className="text-gray-600">{member.bio}</p>
+            <p className="mb-8 text-center max-w-2xl mx-auto">
+              IEP Ghana is led by a passionate and professional team with expertise in international education, youth development, program design, and community engagement. United by a shared commitment to impact, our team works collaboratively to support learners and build bridges across cultures.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              {staffMembers.map((member, idx) => {
+                const imagePath = `/images/team/${member.name.toLowerCase().replace(/ /g, '-')}.jpg`;
+                return (
+                  <div key={member.name} className="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+                    {/* Team member image, only render if file exists */}
+                    <img src={imagePath} alt={member.name} className="w-32 h-32 rounded-full mb-4 object-cover bg-gray-100" onError={e => e.currentTarget.style.display='none'} />
+                    <div className="text-lg font-semibold text-gray-800 text-center">{member.name}</div>
+                    <div className="text-sm text-gray-500 text-center">{member.role}</div>
                   </div>
-                </motion.div>
-              ))}
+                );
+              })}
+            </div>
+            <h3 className="text-2xl font-semibold text-center mb-6">Our Board</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {boardMembers.map((member, idx) => {
+                const imagePath = `/images/board/${member.name.toLowerCase().replace(/ /g, '-')}.jpg`;
+                return (
+                  <div key={member.name} className="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+                    {/* Board member image, only render if file exists */}
+                    <img src={imagePath} alt={member.name} className="w-32 h-32 rounded-full mb-4 object-cover bg-gray-100" onError={e => e.currentTarget.style.display='none'} />
+                    <div className="text-lg font-semibold text-gray-800 text-center">{member.name}</div>
+                    <div className="text-sm text-gray-500 text-center">{member.role}</div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
       </div>
     </>
   );
-};
-
-export default About; 
+} 

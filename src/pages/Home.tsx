@@ -57,6 +57,32 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Add after hero section, before Our Programs */}
+        <div className="bg-white py-6">
+          <div className="container mx-auto overflow-x-hidden">
+            <div className="flex items-center animate-scroll-x whitespace-nowrap gap-8" style={{ animation: 'scroll-x 30s linear infinite' }}>
+              {[
+                { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
+                { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
+                { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
+                { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
+                { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
+                { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
+                { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
+                { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
+                { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
+                { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
+                { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
+                { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
+              ].map((partner) => (
+                <a key={partner.name} href={partner.url} target="_blank" rel="noopener noreferrer" className="inline-block">
+                  <img src={partner.logo} alt={partner.name + ' logo'} className="h-12 w-auto mx-6 object-contain inline" style={{ minWidth: 120 }} onError={e => e.currentTarget.style.display='none'} />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Featured Programs */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -77,7 +103,7 @@ const Home = () => {
                     Experience a year abroad as a high school student in Ghana or send
                     your child to study overseas.
                   </p>
-                  <Link to="/programs/high-school" className="text-primary hover:underline">
+                  <Link to="/programs" className="text-primary hover:underline">
                     Learn More →
                   </Link>
                 </div>
@@ -98,7 +124,7 @@ const Home = () => {
                     Make a difference in local communities while immersing yourself in
                     Ghanaian culture.
                   </p>
-                  <Link to="/programs/volunteer" className="text-primary hover:underline">
+                  <Link to="/volunteers" className="text-primary hover:underline">
                     Learn More →
                   </Link>
                 </div>
@@ -110,16 +136,15 @@ const Home = () => {
               >
                 <img
                   src="/images/programs/language.jpg"
-                  alt="Language & Culture"
+                  alt="Community Education & Development Initiatives"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Language & Culture</h3>
+                  <h3 className="text-xl font-bold mb-2">Community Education & Development Initiatives</h3>
                   <p className="text-gray-600 mb-4">
-                    Learn local languages and immerse yourself in Ghana's rich cultural
-                    heritage.
+                    Learn local languages, participate in community projects, and immerse yourself in Ghana's rich cultural heritage.
                   </p>
-                  <Link to="/programs/language-culture" className="text-primary hover:underline">
+                  <Link to="/programs" className="text-primary hover:underline">
                     Learn More →
                   </Link>
                 </div>
@@ -153,16 +178,15 @@ const Home = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="bg-primary text-white py-20">
+        {/* Partnership CTA Section */}
+        <section className="bg-secondary text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Start Your Journey?</h2>
+            <h2 className="text-3xl font-bold mb-6">Partner With IEP Ghana</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Take the first step towards an unforgettable cultural exchange experience
-              with IEP Ghana.
+              Join us in creating life-changing opportunities for youth and communities. We welcome partnerships with schools, NGOs, companies, and individuals who share our vision for global citizenship and educational equity.
             </p>
-            <Link to="/apply" className="btn-secondary">
-              Apply Now
+            <Link to="/partnership" className="btn-primary bg-accent text-white font-bold px-8 py-3 rounded-md shadow hover:bg-orange-700 transition-colors">
+              Become a Partner
             </Link>
           </div>
         </section>

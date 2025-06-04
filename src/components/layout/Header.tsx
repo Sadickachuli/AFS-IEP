@@ -1,18 +1,20 @@
-import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from '@mui/icons-material';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Programs', href: '/programs' },
   { name: 'About', href: '/about' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Programs', href: '/programs' },
+  { name: 'Impact', href: '/impact' },
+  { name: 'Volunteers', href: '/volunteers' },
+  { name: 'Partners', href: '/partners' },
   { name: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white shadow">
@@ -42,15 +44,18 @@ export default function Header() {
             <Link
               key={item.name}
               to={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary"
+              className={`text-sm font-semibold leading-6 hover:text-primary transition-colors ${location.pathname === item.href ? 'text-primary' : 'text-gray-900'}`}
             >
               {item.name}
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to="/apply" className="btn-primary">
-            Apply Now
+        <div className="hidden lg:flex lg:gap-x-4 lg:ml-8">
+          <Link to="/donate" className="btn-primary bg-accent text-white hover:bg-orange-600 font-bold px-6 py-2 rounded-md shadow transition-colors">
+            Donate
+          </Link>
+          <Link to="/partnership" className="btn-secondary bg-secondary text-white hover:bg-green-700 font-bold px-6 py-2 rounded-md shadow transition-colors">
+            Partnership
           </Link>
         </div>
       </nav>
@@ -90,14 +95,11 @@ export default function Header() {
                       {item.name}
                     </Link>
                   ))}
-                </div>
-                <div className="py-6">
-                  <Link
-                    to="/apply"
-                    className="btn-primary w-full justify-center"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Apply Now
+                  <Link to="/donate" className="block w-full mt-4 btn-primary bg-accent text-white font-bold px-6 py-2 rounded-md shadow transition-colors text-center" onClick={() => setMobileMenuOpen(false)}>
+                    Donate
+                  </Link>
+                  <Link to="/partnership" className="block w-full mt-2 btn-secondary bg-secondary text-white font-bold px-6 py-2 rounded-md shadow transition-colors text-center" onClick={() => setMobileMenuOpen(false)}>
+                    Partnership
                   </Link>
                 </div>
               </div>

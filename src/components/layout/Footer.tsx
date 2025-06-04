@@ -11,16 +11,13 @@ const navigation = {
     { name: 'Contact', href: '/contact' },
   ],
   programs: [
-    { name: 'High School Exchange', href: '/programs/high-school-exchange' },
-    { name: 'University Programs', href: '/programs/university' },
-    { name: 'Summer Programs', href: '/programs/summer' },
-    { name: 'Language Programs', href: '/programs/language' },
+    { name: 'Study Abroad in Higher Education', href: '/programs' },
+    { name: 'Community Education & Development Initiatives', href: '/programs' },
+    { name: 'Volunteer Programs', href: '/volunteers' },
   ],
   company: [
     { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/about/team' },
-    { name: 'Careers', href: '/careers' },
-    { name: 'Press', href: '/press' },
+    { name: 'Our Team', href: '/about#team' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy' },

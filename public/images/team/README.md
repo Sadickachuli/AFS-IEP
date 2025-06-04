@@ -1,33 +1,15 @@
-# Team Member Images
+# Team Images
 
-This directory contains profile images for team members:
+Upload team member images here. Filenames should be lowercase, spaces replaced with dashes, e.g.:
 
-1. `director.jpg` - Executive Director
-   - Professional headshot
-   - Size: 800x800px (1:1 aspect ratio)
-   - Content: Professional attire, neutral background
+- diana-sey.jpg
+- teye-mensah-mezo.jpg
+- christiana-ahu.jpg
+- rosemond-nkansah.jpg
+- osborn-mensah.jpg
+- deborah-agamasu.jpg
+- theresa-ammah.jpg
 
-2. `coordinator.jpg` - Program Coordinator
-   - Professional headshot
-   - Size: 800x800px (1:1 aspect ratio)
-   - Content: Professional attire, neutral background
+**Recommended size:** 400x400px, JPG format.
 
-3. `cultural.jpg` - Cultural Affairs Director
-   - Professional headshot
-   - Size: 800x800px (1:1 aspect ratio)
-   - Content: Professional attire, neutral background
-
-4. `support.jpg` - Student Support Specialist
-   - Professional headshot
-   - Size: 800x800px (1:1 aspect ratio)
-   - Content: Professional attire, neutral background
-
-Image Requirements:
-- Format: JPG/JPEG
-- Resolution: 800x800px minimum
-- Style: Professional headshots
-- Background: Neutral, office, or blurred
-- Lighting: Well-lit, even lighting
-- Cropping: Head and shoulders or waist-up
-- Expression: Friendly and approachable
-- Quality: High-resolution, sharp focus 
+**Note:** Images will appear as circles. Use clear, professional headshots. 
