@@ -54,6 +54,6 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-.animate-scroll-x {
+.marquee-track {
   animation: scroll-x 30s linear infinite;
 } 

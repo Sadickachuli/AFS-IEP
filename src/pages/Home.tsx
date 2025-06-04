@@ -57,28 +57,44 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Add after hero section, before Our Programs */}
-        <div className="bg-white py-6">
-          <div className="container mx-auto overflow-x-hidden">
-            <div className="flex items-center animate-scroll-x whitespace-nowrap gap-8" style={{ animation: 'scroll-x 30s linear infinite' }}>
-              {[
-                { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
-                { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
-                { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
-                { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
-                { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
-                { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
-                { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
-                { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
-                { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
-                { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
-                { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
-                { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
-              ].map((partner) => (
-                <a key={partner.name} href={partner.url} target="_blank" rel="noopener noreferrer" className="inline-block">
-                  <img src={partner.logo} alt={partner.name + ' logo'} className="h-12 w-auto mx-6 object-contain inline" style={{ minWidth: 120 }} onError={e => e.currentTarget.style.display='none'} />
-                </a>
-              ))}
+        {/* Our Partners Title and Infinite Marquee */}
+        <div className="bg-white pt-6 pb-6 overflow-x-hidden -mt-2">
+          <div className="container mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-4">Our Partners</h2>
+            <div className="relative w-full overflow-x-hidden" style={{ transform: 'translateY(-2px)' }}>
+              <div className="marquee-track flex whitespace-nowrap gap-8">
+                {[
+                  { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
+                  { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
+                  { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
+                  { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
+                  { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
+                  { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
+                  { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
+                  { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
+                  { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
+                  { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
+                  { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
+                  { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
+                ].concat([
+                  { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
+                  { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
+                  { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
+                  { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
+                  { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
+                  { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
+                  { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
+                  { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
+                  { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
+                  { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
+                  { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
+                  { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
+                ]).map((partner, idx) => (
+                  <a key={partner.name + idx} href={partner.url} target="_blank" rel="noopener noreferrer" className="inline-block">
+                    <img src={partner.logo} alt={partner.name + ' logo'} className="h-12 w-auto mx-6 object-contain inline" style={{ minWidth: 120 }} onError={e => e.currentTarget.style.display='none'} />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

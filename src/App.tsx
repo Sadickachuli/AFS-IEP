@@ -11,9 +11,9 @@ import NotFound from '@/pages/NotFound'
 import Impact from '@/pages/Impact'
 import Partners from '@/pages/Partners'
 import Volunteers from '@/pages/Volunteers'
+import Donate from '@/pages/Donate'
 
 // Placeholder pages
-const Donate = () => <div className="container py-20 text-center"><h1 className="text-4xl font-bold mb-4">Donate</h1><p className="text-lg">Support IEP Ghana. Online donation coming soon!</p></div>;
 const Partnership = () => <div className="container py-20 text-center"><h1 className="text-4xl font-bold mb-4">Partnership</h1><p className="text-lg">Become a partner. Partnership form and info coming soon!</p></div>;
 
 export default function App() {
