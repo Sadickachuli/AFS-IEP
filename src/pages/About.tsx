@@ -38,36 +38,37 @@ export default function About() {
           </div>
         </section>
 
-        {/* Overview Section */}
+        {/* Overview and History Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-bold mb-6">About Us</h2>
-            <h3 className="text-xl font-semibold mb-4">Overview</h3>
-            <p className="mb-4">
-              Intercultural Exchange Programs (IEP) Ghana exists to promote the advancement of intercultural learning and global understanding. We design and deliver programs that bring together young people, families, and communities from diverse cultural backgrounds to engage in shared learning experiences. Through these interactions, participants gain deeper appreciation for each other's cultures and develop a strong sense of global citizenship.
-            </p>
-            <p className="mb-4">
-              Our mission is to help individuals, especially youth become more aware of our shared humanity and more committed to addressing global challenges. By providing educational exchanges, work and training opportunities for students, teachers, and young professionals, we contribute to the advancement of education both in Ghana and abroad.
-            </p>
-          </div>
-        </section>
-
-        {/* History Section */}
-        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-3xl font-bold mb-6">Our History</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
+              {/* Overview text and main image */}
+              <div className="order-2 lg:order-1">
+                <h2 className="text-3xl font-bold mb-6">About Us</h2>
+                <h3 className="text-xl font-semibold mb-4">Overview</h3>
+                <p className="mb-4">
+                  Intercultural Exchange Programs (IEP) Ghana exists to promote the advancement of intercultural learning and global understanding. We design and deliver programs that bring together young people, families, and communities from diverse cultural backgrounds to engage in shared learning experiences. Through these interactions, participants gain deeper appreciation for each other's cultures and develop a strong sense of global citizenship.
+                </p>
+                <p className="mb-4">
+                  Our mission is to help individuals, especially youth become more aware of our shared humanity and more committed to addressing global challenges. By providing educational exchanges, work and training opportunities for students, teachers, and young professionals, we contribute to the advancement of education both in Ghana and abroad.
+                </p>
+              </div>
+              <div className="order-1 lg:order-2 mb-8 lg:mb-0">
+                <img src="/images/about/history-main.jpg" alt="IEP Ghana Through the Years" className="rounded-lg shadow-lg w-full aspect-[4/3] object-cover" />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
+              {/* History images stacked vertically */}
+              <div className="order-2 lg:order-1 flex flex-col gap-4">
+                <img src="/images/about/history-1.jpg" alt="Early days of IEP Ghana" className="rounded-lg shadow-lg w-full h-48 object-cover" />
+                <img src="/images/about/history-2.jpg" alt="IEP Ghana Today" className="rounded-lg shadow-lg w-full h-48 object-cover" />
+              </div>
+              {/* History text */}
+              <div className="order-1 lg:order-2">
+                <h2 className="text-3xl font-bold mb-6">Our History</h2>
                 <p className="mb-4">
                   IEP Ghana was born from a rich legacy of international exchange and community-based education in Ghana. Originally operating within the AFS Ghana framework, IEP Ghana has since grown into an independent organisation with a clear focus on higher education mobility and local development through school-based initiatives. Today, we stand as a trusted partner in international education and grassroots empowerment.
                 </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <img src="/images/about/history-1.jpg" alt="Early days of IEP Ghana" className="rounded-lg shadow-lg w-full h-48 object-cover" />
-                  <img src="/images/about/history-2.jpg" alt="IEP Ghana Today" className="rounded-lg shadow-lg w-full h-48 object-cover" />
-                </div>
-              </div>
-              <div>
-                <img src="/images/about/history-main.jpg" alt="IEP Ghana Through the Years" className="rounded-lg shadow-lg w-full aspect-[4/3] object-cover" />
               </div>
             </div>
           </div>
