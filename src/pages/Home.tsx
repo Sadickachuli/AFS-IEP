@@ -4,6 +4,21 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/shared/SEO';
 
 const Home = () => {
+  const partnerLogos = [
+    { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
+    { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
+    { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
+    { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
+    { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
+    { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
+    { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
+    { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
+    { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
+    { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
+    { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
+    { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
+  ];
+
   return (
     <>
       <SEO
@@ -12,7 +27,7 @@ const Home = () => {
       />
       <div>
         {/* Hero Section */}
-        <section className="relative h-[90vh] bg-gray-900 overflow-hidden">
+        <section className="relative h-[85vh] bg-gray-900 overflow-hidden">
           <div className="absolute inset-0">
             {/* Mobile Image */}
             <img
@@ -49,9 +64,7 @@ const Home = () => {
                 <Link to="/programs" className="btn-primary">
                   Explore Programs
                 </Link>
-                <Link to="/host-family" className="btn-secondary">
-                  Become a Host Family
-                </Link>
+
               </div>
             </motion.div>
           </div>
@@ -62,36 +75,22 @@ const Home = () => {
           <div className="container mx-auto">
             <h2 className="text-2xl font-bold text-center mb-4">Our Partners</h2>
             <div className="relative w-full overflow-x-hidden" style={{ transform: 'translateY(-2px)' }}>
-              <div className="marquee-track flex whitespace-nowrap gap-8">
-                {[
-                  { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
-                  { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
-                  { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
-                  { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
-                  { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
-                  { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
-                  { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
-                  { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
-                  { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
-                  { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
-                  { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
-                  { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
-                ].concat([
-                  { name: 'AFS', url: 'https://afs.org/', logo: '/images/partners/afs.png' },
-                  { name: 'BASICS', url: 'https://basicsinternational.org/', logo: '/images/partners/basics.png' },
-                  { name: 'CeST', url: 'https://www.cestint.com/', logo: '/images/partners/cest.png' },
-                  { name: 'Future Leaders', url: 'https://futureleadersuccghana.wordpress.com/', logo: '/images/partners/futureleaders.png' },
-                  { name: 'SCEF', url: 'https://scef-international.org/', logo: '/images/partners/scef.png' },
-                  { name: 'HRAC', url: 'http://hracghana.org/', logo: '/images/partners/hrac.png' },
-                  { name: 'Street Academy', url: 'https://thestreetacademy.webs.com/', logo: '/images/partners/streetacademy.png' },
-                  { name: 'Maven Heart', url: 'https://mavenheart.org/', logo: '/images/partners/mavenheart.png' },
-                  { name: 'Alafya', url: 'http://www.alafyafoundation.org/index_en.html', logo: '/images/partners/alafya.png' },
-                  { name: 'CLED', url: 'https://www.facebook.com/cledghana/', logo: '/images/partners/cled.png' },
-                  { name: 'Fafali', url: 'https://fafaliorganization.org/', logo: '/images/partners/fafali.png' },
-                  { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
-                ]).map((partner, idx) => (
+              <div
+                className="marquee-track flex whitespace-nowrap gap-8"
+                style={{
+                  width: `${partnerLogos.length * 2 * 140}px`, // 140px per logo (adjust as needed)
+                  animation: 'scroll-x 30s linear infinite',
+                }}
+              >
+                {[...partnerLogos, ...partnerLogos].map((partner, idx) => (
                   <a key={partner.name + idx} href={partner.url} target="_blank" rel="noopener noreferrer" className="inline-block">
-                    <img src={partner.logo} alt={partner.name + ' logo'} className="h-12 w-auto mx-6 object-contain inline" style={{ minWidth: 120 }} onError={e => e.currentTarget.style.display='none'} />
+                    <img
+                      src={partner.logo}
+                      alt={partner.name + ' logo'}
+                      className="h-12 w-auto mx-6 object-contain inline"
+                      style={{ minWidth: 120 }}
+                      onError={e => e.currentTarget.style.display='none'}
+                    />
                   </a>
                 ))}
               </div>
