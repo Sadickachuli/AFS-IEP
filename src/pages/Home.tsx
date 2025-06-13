@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SEO from '../components/shared/SEO';
+import Apply from './Apply';
 
 const Home = () => {
   const partnerLogos = [
@@ -19,6 +20,8 @@ const Home = () => {
     { name: 'Henry House', url: 'https://www.henryhousecommunityschool.com/', logo: '/images/partners/henryhouse.png' },
   ];
 
+  const [showApply, setShowApply] = useState(false);
+
   return (
     <>
       <SEO
@@ -27,7 +30,7 @@ const Home = () => {
       />
       <div>
         {/* Hero Section */}
-        <section className="relative h-[85vh] bg-gray-900 overflow-hidden">
+        <section className="relative h-[85vh] bg-gray-900 overflow-hidden flex items-center">
           <div className="absolute inset-0">
             {/* Mobile Image */}
             <img
@@ -51,24 +54,35 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-2xl text-white"
+              className="max-w-2xl text-white pt-16 md:pt-24"
             >
               <h1 className="text-5xl font-bold mb-6">
-                Experience Ghana Through Cultural Exchange
+                Empowering Ghana's Youth Through Global Education
               </h1>
               <p className="text-xl mb-8">
-                Join IEP Ghana for life-changing international exchange programs that
-                promote cultural understanding and global citizenship.
+                IEP Ghana advances intercultural learning, leadership, and educational opportunities for young people, families, and communities. Join us to bridge cultures, build leaders, and create lasting impact in Ghana and beyond.
               </p>
               <div className="space-x-4">
                 <Link to="/programs" className="btn-primary">
                   Explore Programs
                 </Link>
-
+                <button className="btn-secondary" onClick={() => setShowApply(true)}>
+                  Apply to Programs
+                </button>
               </div>
             </motion.div>
           </div>
         </section>
+
+        {showApply && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="fixed inset-0 bg-black bg-opacity-40" onClick={() => setShowApply(false)} />
+            <div className="relative bg-white rounded-lg shadow-lg p-8 w-full max-w-2xl mx-auto overflow-y-auto max-h-[90vh]">
+              <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl" onClick={() => setShowApply(false)}>&times;</button>
+              <Apply />
+            </div>
+          </div>
+        )}
 
         {/* Our Partners Title and Infinite Marquee */}
         <div className="bg-white pt-6 pb-6 overflow-x-hidden -mt-2">
@@ -109,11 +123,11 @@ const Home = () => {
               >
                 <img
                   src="/images/programs/high-school.jpg"
-                  alt="High School Exchange"
+                  alt="Study Abroad"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">High School Exchange</h3>
+                  <h3 className="text-xl font-bold mb-2">Study Abroad</h3>
                   <p className="text-gray-600 mb-4">
                     Experience a year abroad as a high school student in Ghana or send
                     your child to study overseas.
@@ -174,19 +188,19 @@ const Home = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Our Impact</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-primary mb-2">1000+</div>
+                <div className="text-4xl font-bold text-primary mb-2">2000+</div>
                 <div className="text-gray-600">Exchange Students</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <div className="text-gray-600">Host Families</div>
+                <div className="text-gray-600">Young Community Leaders</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">50+</div>
-                <div className="text-gray-600">Partner Schools</div>
+                <div className="text-gray-600">Community Project Organisations</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-primary mb-2">20+</div>
+                <div className="text-4xl font-bold text-primary mb-2">58+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
             </div>

@@ -20,7 +20,7 @@ const initialFormData: FormData = {
 }
 
 const programs = [
-  'High School Exchange',
+  'Study Abroad',
   'University Programs',
   'Summer Programs',
   'Language Programs',

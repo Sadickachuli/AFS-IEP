@@ -13,6 +13,10 @@
     @apply font-sans text-neutral-dark antialiased;
   }
 
+  #root > div {
+    @apply pt-20 md:pt-24;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
   }

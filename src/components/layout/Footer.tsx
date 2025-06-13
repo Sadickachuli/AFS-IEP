@@ -57,10 +57,9 @@ export default function Footer() {
       <div className="container py-12 lg:py-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <Link to="/">
-              <span className="sr-only">IEP Ghana</span>
+            <Link to="/" className="flex flex-col items-start">
               <img
-                className="h-16 w-auto"
+                className="h-28 w-auto mb-2"
                 src="/images/logo.png"
                 alt="IEP Ghana Logo"
               />
