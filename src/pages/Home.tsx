@@ -30,7 +30,7 @@ const Home = () => {
       />
       <div>
         {/* Hero Section */}
-        <section className="relative h-[85vh] bg-gray-900 overflow-hidden flex items-center">
+        <section className="relative min-h-[80vh] bg-gray-900 overflow-hidden flex items-center pt-24 pb-8 md:pt-32 md:pb-0">
           <div className="absolute inset-0">
             {/* Mobile Image */}
             <img
@@ -54,7 +54,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-2xl text-white pt-16 md:pt-24"
+              className="max-w-2xl text-white w-full"
             >
               <h1 className="text-5xl font-bold mb-6">
                 Empowering Ghana's Youth Through Global Education
@@ -62,7 +62,7 @@ const Home = () => {
               <p className="text-xl mb-8">
                 IEP Ghana advances intercultural learning, leadership, and educational opportunities for young people, families, and communities. Join us to bridge cultures, build leaders, and create lasting impact in Ghana and beyond.
               </p>
-              <div className="space-x-4">
+              <div className="space-x-4 flex flex-col sm:flex-row gap-4">
                 <Link to="/programs" className="btn-primary">
                   Explore Programs
                 </Link>

@@ -77,7 +77,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <X className="h-6 w-6" aria-hidden="true" />
+                <span className="h-6 w-6 text-2xl font-bold" aria-hidden="true">×</span>
               </button>
             </div>
             <div className="mt-6 flow-root">
