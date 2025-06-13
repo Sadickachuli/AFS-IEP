@@ -99,7 +99,7 @@ export default function Programs() {
             </div>
             {/* Global Skills Academy */}
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <img src="/images/programs/global-skills.jpg" alt="Global Skills Academy" className="w-full md:w-1/3 h-56 object-cover rounded-lg mb-6 md:mb-0" onError={e => e.currentTarget.style.display='none'} />
+              <img src="/images/programs/global-skills.jpg" alt="Global Skills Academy" className="h-40 w-full md:w-1/3 object-cover rounded-t-lg mb-6 md:mb-0" onError={e => e.currentTarget.style.display='none'} />
               <div className="w-full md:w-2/3">
                 <h2 className="text-2xl font-semibold mb-4">Global Skills Academy</h2>
                 <p className="mb-2 font-bold">Empower Your Future with the Global Skills Academy</p>
