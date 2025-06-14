@@ -23,7 +23,9 @@ export default function Programs() {
           <div className="container mx-auto px-4 max-w-4xl space-y-16">
             {/* Study Abroad */}
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <img src="/images/programs/high-school.jpg" alt="Study Abroad" className="w-full md:w-1/3 h-56 object-cover rounded-lg mb-6 md:mb-0" onError={e => e.currentTarget.style.display='none'} />
+              <div className="w-full md:w-1/3 h-56 bg-gray-200 flex items-center justify-center rounded-lg mb-6 md:mb-0">
+                <span className="text-gray-400">Image coming soon</span>
+              </div>
               <div className="w-full md:w-2/3">
                 <h2 className="text-2xl font-semibold mb-4">1. Study Abroad</h2>
                 <p className="mb-2">
@@ -81,16 +83,18 @@ export default function Programs() {
             </div>
             {/* Community Education & Development Initiatives */}
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <img src="/images/programs/language.jpg" alt="Community Education & Development Initiatives" className="w-full md:w-1/3 h-56 object-cover rounded-lg mb-6 md:mb-0" onError={e => e.currentTarget.style.display='none'} />
+              <div className="w-full md:w-1/3 h-56 bg-gray-200 flex items-center justify-center rounded-lg mb-6 md:mb-0">
+                <span className="text-gray-400">Image coming soon</span>
+              </div>
               <div className="w-full md:w-2/3">
-                <h2 className="text-2xl font-semibold mb-4">2. Community Education &amp; Development Initiatives</h2>
+                <h2 className="text-2xl font-semibold mb-4">2. Community Education & Development Initiatives</h2>
                 <p className="mb-2">
                   At the heart of IEP Ghana's mission is a belief in educational equity. Our community projects aim to strengthen learning environments and create opportunities for young people through:
                 </p>
                 <ul className="list-disc list-inside mb-4 pl-4">
                   <li>School-Based Programs: Leadership and citizenship workshops, reading campaigns, and intercultural learning sessions for students and teachers.</li>
                   <li>Educational Fundraising Initiatives: Mobilizing support for schools in need—ranging from books and equipment to infrastructure and scholarships.</li>
-                  <li>Teacher &amp; Youth Empowerment Projects: Training programs, mini-grants, and community engagement activities that elevate local education systems.</li>
+                  <li>Teacher & Youth Empowerment Projects: Training programs, mini-grants, and community engagement activities that elevate local education systems.</li>
                 </ul>
                 <p>
                   Through these efforts, we work to ensure that every child, regardless of background, has access to quality education and the chance to participate in a globalised world.
@@ -99,9 +103,11 @@ export default function Programs() {
             </div>
             {/* Global Skills Academy */}
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <img src="/images/programs/global-skills.jpg" alt="Global Skills Academy" className="h-40 w-full md:w-1/3 object-cover rounded-t-lg mb-6 md:mb-0" onError={e => e.currentTarget.style.display='none'} />
+              <div className="w-full md:w-1/3 h-40 bg-gray-200 flex items-center justify-center rounded-t-lg mb-6 md:mb-0">
+                <span className="text-gray-400">Image coming soon</span>
+              </div>
               <div className="w-full md:w-2/3">
-                <h2 className="text-2xl font-semibold mb-4">Global Skills Academy</h2>
+                <h2 className="text-2xl font-semibold mb-4">3. Global Skills Academy</h2>
                 <p className="mb-2 font-bold">Empower Your Future with the Global Skills Academy</p>
                 <p className="mb-2">The Global Skills Academy is a short-term training and certification program designed for students, young professionals, and educators. It offers thematic courses in Global Citizenship, Intercultural Communication, Sustainability, Leadership, and Digital Collaboration.</p>
                 <ul className="list-disc list-inside mb-2 pl-4">
@@ -112,6 +118,29 @@ export default function Programs() {
                 </ul>
                 <p className="mb-2">Courses: Global Citizenship, Intercultural Communication, Sustainability, Leadership, Digital Collaboration</p>
                 <p className="mb-2 font-semibold">Price: GHS 600</p>
+                <a href="/apply" className="btn-primary mt-2 inline-block">Sign Up</a>
+              </div>
+            </div>
+            {/* Volunteer Travel and Impact Program (moved from Volunteers page) */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="w-full md:w-1/3 h-56 bg-gray-200 flex items-center justify-center rounded-lg mb-6 md:mb-0">
+                <span className="text-gray-400">Image coming soon</span>
+              </div>
+              <div className="w-full md:w-2/3">
+                <h2 className="text-2xl font-semibold mb-4">4. Volunteer Travel and Impact Program</h2>
+                <p className="mb-2 font-bold">Make a Difference While Discovering Ghana</p>
+                <p className="mb-2">Join our Volunteer & Impact Travel Program and experience Ghana like never before. Support local communities, develop leadership and soft skills, and build global friendships. Ideal for students, diaspora youth, and service groups.</p>
+                <ul className="list-disc list-inside mb-2 pl-4">
+                  <li>Expert facilitators from Ghana and abroad</li>
+                  <li>Interactive sessions with group projects and case studies</li>
+                  <li>Hands-on volunteer work in community settings</li>
+                  <li>Cultural excursions (Cape Coast, Kente weaving, etc.)</li>
+                  <li>Workshops on the SDGs, African history, and identity</li>
+                  <li>Safe accommodation and local support</li>
+                  <li>Digital certificate upon completion</li>
+                </ul>
+                <p className="mb-2">Courses: Cross-cultural communication, Team collaboration, Emotional intelligence, Problem-solving and adaptability, Public speaking and storytelling for advocacy</p>
+                <p className="mb-2 font-semibold">Price: GHS 7,500 or $750</p>
                 <a href="/apply" className="btn-primary mt-2 inline-block">Sign Up</a>
               </div>
             </div>

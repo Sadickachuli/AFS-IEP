@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/shared/SEO';
 import { LinkedIn } from '@mui/icons-material';
@@ -27,6 +27,20 @@ export default function About() {
   const [openStaffBio, setOpenStaffBio] = useState<number | null>(null);
   const [openBoardBio, setOpenBoardBio] = useState<number | null>(null);
   const [drawerBio, setDrawerBio] = useState<{ name: string; bio: string } | null>(null);
+
+  // Carousel state
+  const carouselImages = [
+    'https://via.placeholder.com/800x600?text=IEP+Ghana+1',
+    'https://via.placeholder.com/800x600?text=IEP+Ghana+2',
+    'https://via.placeholder.com/800x600?text=IEP+Ghana+3',
+  ];
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCarouselIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [carouselImages.length]);
 
   return (
     <>
@@ -59,7 +73,26 @@ export default function About() {
                   </p>
                 </div>
               <div className="order-1 lg:order-2 mb-8 lg:mb-0">
-                <img src="/images/about/history-main.jpg" alt="IEP Ghana Through the Years" className="rounded-lg shadow-lg w-full aspect-[4/3] object-cover" />
+                {/* Functional carousel with placeholder images */}
+                <div className="relative w-full aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+                  {carouselImages.map((src, idx) => (
+                    <img
+                      key={src}
+                      src={src}
+                      alt={`IEP Ghana Carousel ${idx + 1}`}
+                      className={`w-full h-full object-cover absolute left-0 top-0 transition-opacity duration-700 ${carouselIndex === idx ? 'opacity-100' : 'opacity-0'}`}
+                      style={{ zIndex: carouselIndex === idx ? 2 : 1 }}
+                    />
+                  ))}
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
+                    {carouselImages.map((_, idx) => (
+                      <span
+                        key={idx}
+                        className={`w-3 h-3 bg-white rounded-full ${carouselIndex === idx ? 'opacity-80' : 'opacity-40'}`}
+                      ></span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">

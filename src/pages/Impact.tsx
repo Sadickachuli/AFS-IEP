@@ -80,6 +80,64 @@ export default function Impact() {
                 IEP Ghana is proud to be part of this global movement, helping shape a generation of compassionate, globally-minded leaders through its partnership with Weltwärts and AFS Germany. We look forward to welcoming more volunteers who are ready to serve, learn, and grow—together with Ghanaian communities.
               </p>
             </div>
+            <div>
+              <h2 className="text-2xl font-semibold mb-4">IEP Ghana's Impact Through the AFS Partner Network</h2>
+              <p className="mb-2">
+                As a committed member of the AFS global partner network, Intercultural Exchange Programs (IEP) Ghana plays a pivotal role in shaping young global citizens through intercultural learning and international exchange. IEP Ghana has played a transformative role in connecting Ghanaian youth, educators, and communities to global learning opportunities. Through our hosting and sending programs, and our expanded work in global citizenship education, STEM, and teacher development, IEP Ghana is shaping a new generation of globally minded leaders. For over half a century, IEP Ghana has proudly facilitated the hosting and sending of students under various AFS programs, providing transformative experiences for both Ghanaian participants and international students.
+              </p>
+              <h3 className="text-xl font-bold mt-6 mb-2">Building Global Bridges: Sending Ghanaian Youth Abroad</h3>
+              <p className="mb-2">
+                IEP Ghana has successfully sent hundreds of Ghanaian students to countries around the world through flagship programs like the YES (Kennedy – Lugar Youth Exchange and Study) and AFS Year and Semester Programs. These students live with host families, attend local high schools, and participate in community service—immersing themselves in new cultures while acting as ambassadors of Ghana.
+              </p>
+              <ul className="list-disc list-inside mb-4 pl-4">
+                <li>Global awareness and leadership skills</li>
+                <li>Improved academic and language competencies</li>
+                <li>Stronger cross-cultural communication abilities</li>
+                <li>A deeper appreciation of diversity and inclusion</li>
+              </ul>
+              <p className="mb-2">
+                Many of these young alumni go on to lead meaningful projects in their communities, contribute to national development, and advocate for intercultural understanding.
+              </p>
+              <h3 className="text-xl font-bold mt-6 mb-2">Welcoming the World to Ghana: Hosting International Participants</h3>
+              <p className="mb-2">
+                IEP Ghana also plays a vital role in hosting international students, offering them the opportunity to live with Ghanaian families and study in local high schools. These participants engage deeply with Ghana's rich traditions, languages, and community life—broadening their worldview and challenging cultural assumptions.
+              </p>
+              <ul className="list-disc list-inside mb-4 pl-4">
+                <li>Fosters mutual understanding between Ghanaian communities and the world</li>
+                <li>Strengthens people-to-people diplomacy</li>
+                <li>Promotes Ghana as a hospitable, diverse, and educationally rich destination</li>
+              </ul>
+              <p className="mb-2">
+                Host families, schools, and volunteers across Ghana benefit from these relationships, creating lifelong bonds and shared learning.
+              </p>
+              <h3 className="text-xl font-bold mt-6 mb-2">Empowering Educators and Girls in STEM: Beyond Exchange</h3>
+              <p className="mb-2">
+                In addition to traditional exchange programs, IEP Ghana is a strong advocate for educational transformation through global learning initiatives:
+              </p>
+              <ul className="list-disc list-inside mb-4 pl-4">
+                <li>Through the AFS Effect+ Program, IEP Ghana has trained over 100 teachers and educators in how to integrate Global Competence Education into their classrooms. These workshops equip teachers with practical tools to help students explore global issues, think critically, and take informed action in their communities.</li>
+                <li>In 2024 and 2025, IEP Ghana led a successful campaign that saw 11 Ghanaian girls selected for the Global STEM Accelerators—an award-winning virtual exchange program that empowers girls aged 15–17.5 to pursue careers in science, technology, engineering, and math. The program also engages educators and mentors who support girls throughout their journey, expanding the reach and impact of STEM education across Ghana.</li>
+              </ul>
+              <p className="mb-2">
+                These initiatives are at the heart of our mission to make inclusive, high-quality global education accessible to all—particularly to girls, marginalized youth, and educators in under-resourced communities.
+              </p>
+              <h3 className="text-xl font-bold mt-6 mb-2">A Lasting Impact</h3>
+              <p className="mb-2">
+                IEP Ghana's role in the AFS partner network is about more than just exchanges—it's about investing in people; it's about transformative education and the power of human connection. Our programs build the foundations of peace, understanding, and equity by empowering students, educators, and communities to grow through intercultural learning and collaboration.
+              </p>
+              <p className="mb-2">
+                Our alumni—both local and international—carry with them the values of peace, inclusion, and responsible global citizenship.
+              </p>
+              <p className="mb-2">
+                Through strategic school partnerships, targeted outreach, and strong alumni engagement, IEP Ghana continues to grow its impact—ensuring that young people in and from Ghana are active contributors to global understanding and sustainable development.
+              </p>
+              <p className="mb-2">
+                As we continue to expand our outreach through schools, civil society, and international partners, IEP Ghana remains committed to building a more just and connected world—starting right here in Ghana.
+              </p>
+              <p className="mb-2">
+                IEP Ghana remains committed to expanding access to intercultural experiences, shaping leaders who are not only proud of their roots but also prepared to thrive in an interconnected world.
+              </p>
+            </div>
           </div>
         </section>
       </div>

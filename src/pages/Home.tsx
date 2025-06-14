@@ -57,7 +57,7 @@ const Home = () => {
               className="max-w-2xl text-white w-full"
             >
               <h1 className="text-5xl font-bold mb-6">
-                Empowering Ghana's Youth Through Global Education
+                Empowering Ghana's Youth Through Global Learning
               </h1>
               <p className="text-xl mb-8">
                 IEP Ghana advances intercultural learning, leadership, and educational opportunities for young people, families, and communities. Join us to bridge cultures, build leaders, and create lasting impact in Ghana and beyond.
@@ -121,16 +121,13 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
-                <img
-                  src="/images/programs/high-school.jpg"
-                  alt="Study Abroad"
-                  className="w-full h-48 object-cover"
-                />
+                <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-400">Image coming soon</span>
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Study Abroad</h3>
                   <p className="text-gray-600 mb-4">
-                    Experience a year abroad as a high school student in Ghana or send
-                    your child to study overseas.
+                    We empower students to navigate the international admissions process with confidence and build the skills needed to thrive abroad.
                   </p>
                   <Link to="/programs" className="text-primary hover:underline">
                     Learn More →
@@ -142,16 +139,13 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
-                <img
-                  src="/images/programs/volunteer.jpg"
-                  alt="Volunteer Programs"
-                  className="w-full h-48 object-cover"
-                />
+                <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-400">Image coming soon</span>
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Volunteer Programs</h3>
                   <p className="text-gray-600 mb-4">
-                    Make a difference in local communities while immersing yourself in
-                    Ghanaian culture.
+                    Make a difference in local communities while immersing yourself in Ghanaian culture.
                   </p>
                   <Link to="/volunteers" className="text-primary hover:underline">
                     Learn More →
@@ -163,11 +157,9 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
-                <img
-                  src="/images/programs/language.jpg"
-                  alt="Community Education & Development Initiatives"
-                  className="w-full h-48 object-cover"
-                />
+                <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-400">Image coming soon</span>
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Community Education & Development Initiatives</h3>
                   <p className="text-gray-600 mb-4">

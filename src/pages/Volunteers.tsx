@@ -28,25 +28,9 @@ export default function Volunteers() {
               <li>Connect with like-minded changemakers</li>
               <li>Receive training, support, and recognition</li>
             </ul>
-            <h2 className="text-2xl font-bold mb-8">Volunteer Travel and Impact Program</h2>
-            <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-              <img src="/images/programs/volunteer-travel.jpg" alt="Volunteer Travel and Impact" className="w-full md:w-1/3 h-56 object-cover rounded-lg mb-6 md:mb-0" onError={e => e.currentTarget.style.display='none'} />
-              <div className="w-full md:w-2/3">
-                <p className="mb-2 font-bold">Make a Difference While Discovering Ghana</p>
-                <p className="mb-2">Join our Volunteer & Impact Travel Program and experience Ghana like never before. Support local communities, develop leadership and soft skills, and build global friendships. Ideal for students, diaspora youth, and service groups.</p>
-                <ul className="list-disc list-inside mb-2 pl-4">
-                  <li>Expert facilitators from Ghana and abroad</li>
-                  <li>Interactive sessions with group projects and case studies</li>
-                  <li>Hands-on volunteer work in community settings</li>
-                  <li>Cultural excursions (Cape Coast, Kente weaving, etc.)</li>
-                  <li>Workshops on the SDGs, African history, and identity</li>
-                  <li>Safe accommodation and local support</li>
-                  <li>Digital certificate upon completion</li>
-                </ul>
-                <p className="mb-2">Courses: Cross-cultural communication, Team collaboration, Emotional intelligence, Problem-solving and adaptability, Public speaking and storytelling for advocacy</p>
-                <p className="mb-2 font-semibold">Price: GHS 7,500 or $750</p>
-                <a href="/apply" className="btn-primary mt-2 inline-block">Sign Up</a>
-              </div>
+            <div className="bg-yellow-100 border-l-4 border-yellow-400 p-6 rounded mb-8">
+              <h2 className="text-2xl font-bold mb-2">How We Support Volunteers</h2>
+              <p className="text-gray-700">Content coming soon: How we support and train people to develop themselves through their volunteering journey.</p>
             </div>
             <h2 className="text-2xl font-semibold mb-4">Volunteer Stories (Coming Soon)</h2>
             {/* Volunteer story image example */}
